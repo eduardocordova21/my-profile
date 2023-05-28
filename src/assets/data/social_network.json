@@ -1,61 +1,61 @@
 {
   "socialNetworks": [
     {
-      "img": "../../assets/images/linkedin_icon.png",
+      "image": "../../assets/images/linkedin_icon.png",
       "name": "Linkedin",
       "link": "https://www.linkedin.com/in/eduardocordova69/",
       "category": "Professional"
     },
     {
-      "img": "../../assets/images/google_icon.png",
+      "image": "../../assets/images/google_icon.png",
       "name": "Google",
       "link": "https://developers.google.com/profile/u/eduardocordova_",
       "category": "Professional"
     },
     {
-      "img": "../../assets/images/whatsapp_icon.png",
+      "image": "../../assets/images/whatsapp_icon.png",
       "name": "WhatsApp",
       "link": "https://www.linkedin.com/in/eduardocordova69/",
       "category": "Personal"
     },
     {
-      "img": "../../assets/images/twitter_icon.png",
+      "image": "../../assets/images/twitter_icon.png",
       "name": "Twitter",
       "link": "https://twitter.com/eduardocordova_",
       "category": "Personal"
     },
     {
-      "img": "../../assets/images/facebook_icon.png",
+      "image": "../../assets/images/facebook_icon.png",
       "name": "Facebook",
       "link": "https://www.facebook.com/eduardocordova69",
       "category": "Personal"
     },
     {
-      "img": "../../assets/images/instagram_icon.png",
+      "image": "../../assets/images/instagram_icon.png",
       "name": "Instagram",
       "link": "https://www.instagram.com/eduardocordova_/",
       "category": "Personal"
     },
     {
-      "img": "../../assets/images/devto_icon.png",
+      "image": "../../assets/images/devto_icon.png",
       "name": "Dev.to",
       "link": "https://dev.to/eduardocordova_ ",
       "category": "Development"
     },
     {
-      "img": "../../assets/images/github_icon.png",
+      "image": "../../assets/images/github_icon.png",
       "name": "GitHub",
       "link": "https://github.com/eduardocordova21",
       "category": "Development"
     },
     {
-      "img": "../../assets/images/outlook_icon.png",
+      "image": "../../assets/images/outlook_icon.png",
       "name": "Outlook",
       "link": "https://github.com/eduardocordova21",
       "category": "Personal"
     },
     {
-      "img": "../../assets/images/gmail_icon.png",
+      "image": "../../assets/images/gmail_icon.png",
       "name": "Gmail",
       "link": "https://github.com/eduardocordova21",
       "category": "Personal"
