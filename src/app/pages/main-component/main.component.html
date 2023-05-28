@@ -46,7 +46,18 @@
             data-bs-parent="#accordionFlush"
           >
             <div class="accordion-body">
-              <div class="row"></div>
+              <card
+                *ngIf="category.key === categories.Development"
+                [socialNetworks]="socialNetworksDevelopments"
+              ></card>
+              <card
+                *ngIf="category.key === categories.Personal"
+                [socialNetworks]="socialNetworksPersonals"
+              ></card>
+              <card
+                *ngIf="category.key === categories.Professional"
+                [socialNetworks]="socialNetworksProfessionals"
+              ></card>
             </div>
           </div>
         </div>

@@ -25,17 +25,15 @@ export class MainComponent implements OnInit {
 
   public socialNetworksPersonals: ISocialNetwork[] = [];
   public socialNetworksDevelopments: ISocialNetwork[] = [];
-  private socialNetworksProfessionals: ISocialNetwork[] = [];
+  public socialNetworksProfessionals: ISocialNetwork[] = [];
 
   public categories = Category;
-
-  private socialNetworks: ISocialNetwork[] = [];
 
   public constructor(private dataService: DataService) {}
 
   public ngOnInit(): void {
     this.dataService.getConfigurations().subscribe((result: IConfiguration) => {
-      this.profileImgPath = result.profileImgPath;
+      this.profileImgPath = result.profileImagePath;
     });
 
     this.dataService
