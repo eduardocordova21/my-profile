@@ -1,61 +1,61 @@
 {
   "socialNetworks": [
     {
-      "image": "assets/images/linkedin_icon.png",
+      "image": "./assets/images/linkedin_icon.png",
       "name": "Linkedin",
       "link": "https://www.linkedin.com/in/eduardocordova69/",
       "category": "Professional"
     },
     {
-      "image": "assets/images/google_icon.png",
+      "image": "./assets/images/google_icon.png",
       "name": "Google",
       "link": "https://developers.google.com/profile/u/eduardocordova_",
       "category": "Professional"
     },
     {
-      "image": "assets/images/whatsapp_icon.png",
+      "image": "./assets/images/whatsapp_icon.png",
       "name": "WhatsApp",
       "link": "https://wa.me//5549999906465?text=Bora trocar uma ideia?",
       "category": "Personal"
     },
     {
-      "image": "assets/images/twitter_icon.png",
+      "image": "./assets/images/twitter_icon.png",
       "name": "Twitter",
       "link": "https://twitter.com/eduardocordova_",
       "category": "Personal"
     },
     {
-      "image": "assets/images/facebook_icon.png",
+      "image": "./assets/images/facebook_icon.png",
       "name": "Facebook",
       "link": "https://www.facebook.com/eduardocordova69",
       "category": "Personal"
     },
     {
-      "image": "assets/images/instagram_icon.png",
+      "image": "./assets/images/instagram_icon.png",
       "name": "Instagram",
       "link": "https://www.instagram.com/eduardocordova_/",
       "category": "Personal"
     },
     {
-      "image": "assets/images/devto_icon.png",
+      "image": "./assets/images/devto_icon.png",
       "name": "Dev.to",
       "link": "https://dev.to/eduardocordova_ ",
       "category": "Development"
     },
     {
-      "image": "assets/images/github_icon.png",
+      "image": "./assets/images/github_icon.png",
       "name": "GitHub",
       "link": "https://github.com/eduardocordova21",
       "category": "Development"
     },
     {
-      "image": "assets/images/outlook_icon.png",
+      "image": "./assets/images/outlook_icon.png",
       "name": "Outlook",
       "link": "mailto:eduardocordova21@outlook.com.br",
       "category": "Personal"
     },
     {
-      "image": "assets/images/gmail_icon.png",
+      "image": "./assets/images/gmail_icon.png",
       "name": "Gmail",
       "link": "mailto:eduardocordova2104@gmail.com",
       "category": "Personal"
