@@ -8,6 +8,7 @@
       />
     </div>
   </div>
+
   <div class="row align-items-center text-center h-25">
     <div class="col-12">
       <div>Olá, meu nome é Eduardo Córdova</div>
@@ -21,8 +22,8 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-sm-1 col-xl-12 mt-5">
+  <div class="row mt-4">
+    <div class="col">
       <div class="accordion accordion-flush" id="accordionFlush">
         <div
           *ngFor="let category of categories | keyvalue"
@@ -30,7 +31,7 @@
         >
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed bg-secondary text-white"
               type="button"
               data-bs-toggle="collapse"
               [attr.data-bs-target]="'#' + category.key"
@@ -45,7 +46,7 @@
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlush"
           >
-            <div class="accordion-body">
+            <div class="accordion-body bg-black">
               <card
                 *ngIf="category.key === categories.Development"
                 [socialNetworks]="socialNetworksDevelopments"
