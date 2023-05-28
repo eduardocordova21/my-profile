@@ -3,14 +3,14 @@ export interface ISocialNetworks {
 }
 
 export interface ISocialNetwork {
-  img: string;
+  image: string;
   name: string;
   link: string;
   category: Category;
 }
 
 export interface IConfiguration {
-  profileImgPath: string;
+  profileImagePath: string;
 }
 
 export enum Category {
