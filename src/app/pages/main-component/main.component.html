@@ -24,14 +24,14 @@
 
   <div class="row mt-4">
     <div class="col">
-      <div class="accordion accordion-flush" id="accordionFlush">
+      <div class="accordion" id="accordion">
         <div
           *ngFor="let category of categories | keyvalue"
           class="accordion-item"
         >
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed bg-secondary text-white"
+              class="accordion-button collapsed bg-black text-white"
               type="button"
               data-bs-toggle="collapse"
               [attr.data-bs-target]="'#' + category.key"
@@ -44,7 +44,7 @@
           <div
             id="{{ category.key }}"
             class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlush"
+            data-bs-parent="#accordion"
           >
             <div class="accordion-body bg-black">
               <card
