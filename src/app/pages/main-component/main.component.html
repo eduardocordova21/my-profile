@@ -24,43 +24,24 @@
 
   <div class="row mt-4">
     <div class="col">
-      <div class="accordion" id="accordion">
-        <div
-          *ngFor="let category of categories | keyvalue"
-          class="accordion-item"
-        >
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed bg-black text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              [attr.data-bs-target]="'#' + category.key"
-              aria-expanded="false"
-              [attr.aria-controls]="category.key"
-            >
-              {{ category.key }}
-            </button>
-          </h2>
-          <div
-            id="{{ category.key }}"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordion"
-          >
-            <div class="accordion-body bg-black">
-              <card
-                *ngIf="category.key === categories.Development"
-                [socialNetworks]="socialNetworksDevelopments"
-              ></card>
-              <card
-                *ngIf="category.key === categories.Personal"
-                [socialNetworks]="socialNetworksPersonals"
-              ></card>
-              <card
-                *ngIf="category.key === categories.Professional"
-                [socialNetworks]="socialNetworksProfessionals"
-              ></card>
-            </div>
-          </div>
+      <div *ngFor="let category of categories | keyvalue">
+        <div class="p-4">
+          {{ category.value }}
+
+          <card
+            *ngIf="category.value === categories.Development"
+            [socialNetworks]="socialNetworksDevelopments"
+          ></card>
+
+          <card
+            *ngIf="category.value === categories.Personal"
+            [socialNetworks]="socialNetworksPersonals"
+          ></card>
+
+          <card
+            *ngIf="category.value === categories.Professional"
+            [socialNetworks]="socialNetworksProfessionals"
+          ></card>
         </div>
       </div>
     </div>
