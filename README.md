@@ -1,27 +1,26 @@
-# MyProfile
+<p align="center">
+  <img src="https://i.giphy.com/R6gvnAxj2ISzJdbA63.gif" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+# My Profile
 
-## Development server
+Um projeto Angular que mostra uma lista com links para todas as minhas redes sociais
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://eduardocordova21.github.io/my-profile/
 
-## Code scaffolding
+## Por onde começar?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Se precisar do meu contato, basta selecionar um e bora lá!
 
-## Build
+## Projeto sendo executado
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![](https://github.com/eduardocordova21/my-profile/blob/main/src/assets/images/demo.png?raw=true)
 
-## Running unit tests
+## Libs utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- bootstrap: ^^5.3.0-alpha
+  - Para que o site possua responsividade em qualquer tamanho de tela
+- ngx-translate/core: ^15.0.0
+  - Contém as principais rotinas para a tradução
+- ngx-translate/http-loader: ^8.0.0
+  - Carrega os arquivos de tradução dinamicamente do servidor web.
