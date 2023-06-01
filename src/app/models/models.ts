@@ -18,3 +18,9 @@ export enum Category {
   Development = 'Development',
   Personal = 'Personal',
 }
+
+export enum Languages {
+  PtBR = 'pt-BR',
+  EnUS = 'en-US',
+  EsEs = 'es-ES',
+}
