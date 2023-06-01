@@ -68,13 +68,13 @@ export class MainComponent implements OnInit {
   public setCountryFlag(language: Languages): string {
     switch (language) {
       case Languages.PtBR:
-        return '../../../assets/images/pt-BR.png';
+        return 'assets/images/pt-BR.png';
 
       case Languages.EnUS:
-        return '../../../assets/images/en-US.png';
+        return 'assets/images/en-US.png';
 
       case Languages.EsEs:
-        return '../../../assets/images/es-ES.png';
+        return 'assets/images/es-ES.png';
     }
   }
 
