@@ -1,4 +1,19 @@
 <div @fade class="container vh-100">
+  <div class="row align-items-center justify-content-center mt-2">
+    <div
+      *ngFor="let language of languages | keyvalue"
+      class="col-lg-1 col-md-2 col-sm-2 col-3"
+    >
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        (click)="setLanguage(language.value)"
+      >
+        <img [src]="setCountryFlag(language.value)" class="img-fluid" />
+      </button>
+    </div>
+  </div>
+
   <div class="row align-items-center text-center h-50">
     <div class="col-12 h-75">
       <img
@@ -9,24 +24,30 @@
     </div>
   </div>
 
-  <div class="row align-items-center text-center h-25">
+  <div class="row align-items-center text-center">
     <div class="col-12">
-      <div>Olá, meu nome é Eduardo Córdova</div>
+      <div>{{ "HelloMyNameIs" | translate }} Eduardo Córdova</div>
+
       <div class="vr"></div>
+
       <div>
-        Sou Desenvolvedor Full Stack e aqui você encontra todas as minhas redes
-        sociais
+        {{
+          "ImAFullStackDeveloperAndHereYouCanFindAllMySocialNetworks"
+            | translate
+        }}
       </div>
+
       <div class="vr"></div>
-      <div>Fique a vontade para entrar em contato!</div>
+
+      <div>{{ "FeelFreeToCallMe!" | translate }}</div>
     </div>
   </div>
 
-  <div class="row mt-4">
+  <div class="row mt-3">
     <div class="col">
       <div *ngFor="let category of categories | keyvalue">
         <div class="p-4">
-          {{ category.value }}
+          {{ category.value | translate }}
 
           <card
             *ngIf="category.value === categories.Development"
