@@ -6,7 +6,7 @@
 
 Um projeto Angular que mostra uma lista com links para todas as minhas redes sociais
 
-https://eduardocordova21.github.io/my-profile/
+[Link para o projeto publicado](https://eduardocordova21.github.io/my-profile/)
 
 ## Por onde começar?
 
