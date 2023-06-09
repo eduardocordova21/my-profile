@@ -31,7 +31,8 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"
-            ]
+            ],
+            "allowedCommonJsDependencies": ["vanilla-tilt"]
           },
           "configurations": {
             "production": {
