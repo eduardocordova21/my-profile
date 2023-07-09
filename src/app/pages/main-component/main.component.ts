@@ -7,10 +7,17 @@ import { DataService } from '../../services/data.service';
   selector: 'main',
   templateUrl: './main.component.html',
   animations: [
-    trigger('fade', [
-      transition('void => *', [
-        style({ opacity: 0 }),
-        animate(3000, style({ opacity: 1 })),
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({
+          opacity: 0,
+        }),
+        animate(
+          '4s ease-in',
+          style({
+            opacity: 1,
+          })
+        ),
       ]),
     ]),
   ],
