@@ -1,0 +1,14 @@
+<div class="row align-items-center justify-content-center mt-2">
+  <div
+    *ngFor="let language of languages | keyvalue"
+    class="col-lg-1 col-md-2 col-sm-2 col-3"
+  >
+    <button
+      type="button"
+      class="btn btn-outline-light"
+      (click)="setLanguage(language.value)"
+    >
+      <img [src]="setCountryFlag(language.value)" class="img-fluid" />
+    </button>
+  </div>
+</div>

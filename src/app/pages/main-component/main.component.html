@@ -1,20 +1,7 @@
 <loading *ngIf="pageIsLoading"></loading>
 
 <div @fade class="container vh-100" *ngIf="!pageIsLoading">
-  <div class="row align-items-center justify-content-center mt-2">
-    <div
-      *ngFor="let language of languages | keyvalue"
-      class="col-lg-1 col-md-2 col-sm-2 col-3"
-    >
-      <button
-        type="button"
-        class="btn btn-outline-light"
-        (click)="setLanguage(language.value)"
-      >
-        <img [src]="setCountryFlag(language.value)" class="img-fluid" />
-      </button>
-    </div>
-  </div>
+  <language-selector></language-selector>
 
   <div class="row align-items-center text-center">
     <div class="col-lg-6 col-md-6 col-sm-10 col-12 h-75 p-5">

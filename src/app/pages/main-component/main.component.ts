@@ -5,10 +5,8 @@ import {
   IConfiguration,
   ISocialNetwork,
   ISocialNetworks,
-  Languages,
 } from '../../models/models';
 import { DataService } from '../../services/data.service';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'main',
@@ -30,18 +28,12 @@ export class MainComponent implements OnInit, AfterViewChecked {
   public socialNetworksProfessionals: ISocialNetwork[] = [];
 
   public categories = Category;
-  public languages = Languages;
 
   public pageIsLoading: boolean = true;
 
-  public constructor(
-    private dataService: DataService,
-    private translateService: TranslateService
-  ) {}
+  public constructor(private dataService: DataService) {}
 
   public ngOnInit(): void {
-    this.translateService.use(Languages.PtBR);
-
     this.dataService.getConfigurations().subscribe((result: IConfiguration) => {
       this.profileImgPath = result.profileImagePath;
     });
@@ -69,32 +61,5 @@ export class MainComponent implements OnInit, AfterViewChecked {
 
   public ngAfterViewChecked(): void {
     this.pageIsLoading = false;
-  }
-
-  public setCountryFlag(language: Languages): string {
-    switch (language) {
-      case Languages.PtBR:
-        return 'assets/images/pt-BR.png';
-
-      case Languages.EnUS:
-        return 'assets/images/en-US.png';
-
-      case Languages.EsEs:
-        return 'assets/images/es-ES.png';
-    }
-  }
-
-  public setLanguage(language: Languages): void {
-    switch (language) {
-      case Languages.PtBR:
-        this.translateService.use(Languages.PtBR);
-        break;
-      case Languages.EnUS:
-        this.translateService.use(Languages.EnUS);
-        break;
-      case Languages.EsEs:
-        this.translateService.use(Languages.EsEs);
-        break;
-    }
   }
 }
