@@ -10,9 +10,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { LoadingComponent } from '../../components/loading/loading.component';
 import { LanguageSelectorComponent } from '../../components/language-selector/language-selector.component';
+import { ProfileImageAndDescriptionComponent } from '../../components/profile-image-and-description/profile-image-and-description.component';
 
 @NgModule({
-  declarations: [MainComponent, CardComponent, LoadingComponent, LanguageSelectorComponent],
+  declarations: [MainComponent, CardComponent, LoadingComponent, LanguageSelectorComponent, ProfileImageAndDescriptionComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

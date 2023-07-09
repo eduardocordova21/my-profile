@@ -1,11 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { AfterViewChecked, Component, OnInit } from '@angular/core';
-import {
-  Category,
-  IConfiguration,
-  ISocialNetwork,
-  ISocialNetworks,
-} from '../../models/models';
+import { Component, OnInit } from '@angular/core';
+import { Category, ISocialNetwork, ISocialNetworks } from '../../models/models';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -20,9 +15,7 @@ import { DataService } from '../../services/data.service';
     ]),
   ],
 })
-export class MainComponent implements OnInit, AfterViewChecked {
-  public profileImgPath: string = '';
-
+export class MainComponent implements OnInit {
   public socialNetworksPersonals: ISocialNetwork[] = [];
   public socialNetworksDevelopments: ISocialNetwork[] = [];
   public socialNetworksProfessionals: ISocialNetwork[] = [];
@@ -34,10 +27,6 @@ export class MainComponent implements OnInit, AfterViewChecked {
   public constructor(private dataService: DataService) {}
 
   public ngOnInit(): void {
-    this.dataService.getConfigurations().subscribe((result: IConfiguration) => {
-      this.profileImgPath = result.profileImagePath;
-    });
-
     this.dataService
       .getSocialNetworks()
       .subscribe((result: ISocialNetworks) => {
@@ -56,10 +45,8 @@ export class MainComponent implements OnInit, AfterViewChecked {
               break;
           }
         });
-      });
-  }
 
-  public ngAfterViewChecked(): void {
-    this.pageIsLoading = false;
+        this.pageIsLoading = false;
+      });
   }
 }
