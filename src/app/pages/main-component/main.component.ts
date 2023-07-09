@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewChecked, Component, OnInit } from '@angular/core';
 import {
   Category,
   IConfiguration,
@@ -22,7 +22,7 @@ import { TranslateService } from '@ngx-translate/core';
     ]),
   ],
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, AfterViewChecked {
   public profileImgPath: string = '';
 
   public socialNetworksPersonals: ISocialNetwork[] = [];
@@ -31,6 +31,8 @@ export class MainComponent implements OnInit {
 
   public categories = Category;
   public languages = Languages;
+
+  public pageIsLoading: boolean = true;
 
   public constructor(
     private dataService: DataService,
@@ -63,6 +65,10 @@ export class MainComponent implements OnInit {
           }
         });
       });
+  }
+
+  public ngAfterViewChecked(): void {
+    this.pageIsLoading = false;
   }
 
   public setCountryFlag(language: Languages): string {

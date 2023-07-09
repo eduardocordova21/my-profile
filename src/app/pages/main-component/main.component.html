@@ -1,4 +1,6 @@
-<div @fade class="container vh-100">
+<loading *ngIf="pageIsLoading"></loading>
+
+<div @fade class="container vh-100" *ngIf="!pageIsLoading">
   <div class="row align-items-center justify-content-center mt-2">
     <div
       *ngFor="let language of languages | keyvalue"
