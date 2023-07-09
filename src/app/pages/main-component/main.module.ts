@@ -5,12 +5,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainComponent } from './main.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DataService } from '../../services/data.service';
-import { CardModule } from 'src/app/components/card/card.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CardComponent } from 'src/app/components/card/card.component';
+import { LoadingComponent } from '../../components/loading/loading.component';
 
 @NgModule({
-  declarations: [MainComponent],
+  declarations: [MainComponent, CardComponent, LoadingComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,8 +24,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         deps: [HttpClient],
       },
     }),
-
-    CardModule,
   ],
   providers: [DataService],
   bootstrap: [MainComponent],

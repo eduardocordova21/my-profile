@@ -1,0 +1,11 @@
+<div class="row vh-100 bg-dark">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <div
+      *ngFor="let quantity of loadings"
+      class="spinner-grow text-light"
+      role="status"
+    >
+      <span class="visually-hidden">{{ "Loading" | translate }}</span>
+    </div>
+  </div>
+</div>
